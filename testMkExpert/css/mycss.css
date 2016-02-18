@@ -1,0 +1,61 @@
+.panty {
+	height: 460px;
+	border: 1px #dcdcdc solid;
+	border-top: 2px #f4821f solid;
+	border-bottom: 40px #f1f1f1 solid;
+	margin-top: 30px;
+	padding-top: 280px ;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 2px;
+  	text-transform: uppercase;
+	background:  url("../img/sprite.png") center 0 no-repeat;
+	background-color: rgba(255, 255, 255, .7);
+	background-blend-mode: color;
+	position: relative;
+}
+
+.container .row:nth-child(1) .flush-col:nth-child(1) .panty {background-position-y: 100px;}
+.container .row:nth-child(1) .flush-col:nth-child(2) .panty {background-position-y: -250px;}
+.container .row:nth-child(1) .flush-col:nth-child(3) .panty {background-position-y: -600px;}
+
+.panty:hover {
+	border-bottom: 70px #f4821f solid;
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.panty .readMore {
+	color: rgba(255, 255, 255, 0);
+	font-size: 12px;
+	line-height: 12.5em;
+	display: none;
+}
+
+.panty:hover .readMore {
+	color: rgba(255, 255, 255, 1);
+	display: block;
+	-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+}
+
+.panty .arrow {
+	height: 12px;
+	width: 12px;
+	position:absolute;
+	bottom: -25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url("../img/black_arrow.png") center 0 no-repeat;
+}
+
+.panty:hover .arrow {
+	bottom: -60px;
+	left: 100%;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
